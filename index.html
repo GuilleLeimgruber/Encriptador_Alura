@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./imagenes/logo-G-16.ico">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img class="logo" src="./imagenes/Logo.png" alt="logo de alura">
+        </div>
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea class="mensaje-encriptado" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="advertencia">
+                <img class="alerta" src="./imagenes/advertencia.png" alt="advertencia">
+            
+                <div class="parrafo1">
+                <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mensaje-cifrado">
+            <div class="contenedor-muneco">
+                <img src="./imagenes/Muñeco.png" alt="muñeco-buscando">
+            </div>
+            <div class="titulo">
+                <h3>Ningun mensaje fue <br> encontrado</h3>
+            </div>
+            <div class="parrafo2">
+                <p>Ingresa el texto que desees
+                encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="mensaje-resultante ocultar">
+                <h3>El mensaje encriptado es:</h3>
+                <p></p>
+            </div>
+            <div class="boton-copiar">
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">Desarrollado por Guillermo Leimgruber 2024</p>
+        <a class="enlace__linkedin" href="https://www.linkedin.com/in/guilleleimgruber/">
+        <img class="linkedin" src="./imagenes/linkedin.png" alt="logo linkedin"></a>
+        <a class="enlace__github" href="https://github.com/GuilleLeimgruber">
+        <img class="enlace__github" src="./imagenes/github.png"></a>
+    </footer>
+    <script src="encriptado.js"></script>
+</body>
+</html>
